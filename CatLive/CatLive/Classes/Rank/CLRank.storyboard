@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Rank Controller-->
+        <!--排行-->
         <scene sceneID="lKi-9L-6AH">
             <objects>
                 <viewController id="k2G-Zx-gqd" customClass="CLRankController" customModule="CatLive" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,10 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="排行" image="ranking-n" selectedImage="ranking-p" id="fQQ-hu-KWe"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upc-Ns-x0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-58" y="62"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ranking-n" width="25" height="19"/>
+        <image name="ranking-p" width="25" height="19"/>
+    </resources>
 </document>

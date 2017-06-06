@@ -88,11 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				1DDB846B1EE6F467000C5879 /* Base */,
-				1DDB846C1EE6F467000C5879 /* Discover */,
-				1DDB846D1EE6F467000C5879 /* Home */,
 				1DDB846F1EE6F467000C5879 /* Main */,
-				1DDB84731EE6F467000C5879 /* Profile */,
+				1DDB846D1EE6F467000C5879 /* Home */,
 				1DDB84741EE6F467000C5879 /* Rank */,
+				1DDB846C1EE6F467000C5879 /* Discover */,
+				1DDB84731EE6F467000C5879 /* Profile */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -406,6 +406,7 @@
 				1DDB84691EE6F43B000C5879 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
