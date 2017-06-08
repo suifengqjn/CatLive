@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9ED6211EE7AB17006E5AEA /* AppDelegate+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ED6201EE7AB17006E5AEA /* AppDelegate+State.swift */; };
 		1DDB84591EE6F43B000C5879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB84581EE6F43B000C5879 /* AppDelegate.swift */; };
 		1DDB845E1EE6F43B000C5879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDB845C1EE6F43B000C5879 /* Main.storyboard */; };
 		1DDB84601EE6F43B000C5879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DDB845F1EE6F43B000C5879 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D9ED6201EE7AB17006E5AEA /* AppDelegate+State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+State.swift"; sourceTree = "<group>"; };
 		1DDB84551EE6F43B000C5879 /* CatLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDB84581EE6F43B000C5879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DDB845D1EE6F43B000C5879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				1DDB846A1EE6F467000C5879 /* Classes */,
 				1DDB84581EE6F43B000C5879 /* AppDelegate.swift */,
+				1D9ED6201EE7AB17006E5AEA /* AppDelegate+State.swift */,
 				1DDB845C1EE6F43B000C5879 /* Main.storyboard */,
 				1DDB845F1EE6F43B000C5879 /* Assets.xcassets */,
 				1DDB84611EE6F43B000C5879 /* LaunchScreen.storyboard */,
@@ -237,6 +240,7 @@
 			files = (
 				1DDB848F1EE6F950000C5879 /* CLProfileController.swift in Sources */,
 				1DDB84891EE6F8EE000C5879 /* CLDiscoverController.swift in Sources */,
+				1D9ED6211EE7AB17006E5AEA /* AppDelegate+State.swift in Sources */,
 				1DDB848D1EE6F93A000C5879 /* CLRankController.swift in Sources */,
 				1DDB847D1EE6F528000C5879 /* XCNavigationController.swift in Sources */,
 				1DDB847F1EE6F5F6000C5879 /* CLMainController.swift in Sources */,
