@@ -23,6 +23,7 @@
 		1DDB848B1EE6F920000C5879 /* CLHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB848A1EE6F920000C5879 /* CLHomeController.swift */; };
 		1DDB848D1EE6F93A000C5879 /* CLRankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB848C1EE6F93A000C5879 /* CLRankController.swift */; };
 		1DDB848F1EE6F950000C5879 /* CLProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB848E1EE6F950000C5879 /* CLProfileController.swift */; };
+		1DEE9E1E1EEBE36A0077F2A1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE9E1D1EEBE36A0077F2A1 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		1DDB848A1EE6F920000C5879 /* CLHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeController.swift; sourceTree = "<group>"; };
 		1DDB848C1EE6F93A000C5879 /* CLRankController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRankController.swift; sourceTree = "<group>"; };
 		1DDB848E1EE6F950000C5879 /* CLProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLProfileController.swift; sourceTree = "<group>"; };
+		1DEE9E1D1EEBE36A0077F2A1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		1DDB846A1EE6F467000C5879 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1DEE9E1C1EEBE3560077F2A1 /* Extension */,
 				1DDB846B1EE6F467000C5879 /* Base */,
 				1DDB846F1EE6F467000C5879 /* Main */,
 				1DDB846D1EE6F467000C5879 /* Home */,
@@ -159,6 +162,14 @@
 				1DDB848C1EE6F93A000C5879 /* CLRankController.swift */,
 			);
 			path = Rank;
+			sourceTree = "<group>";
+		};
+		1DEE9E1C1EEBE3560077F2A1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1DEE9E1D1EEBE36A0077F2A1 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				1DDB84591EE6F43B000C5879 /* AppDelegate.swift in Sources */,
 				1DDB847B1EE6F4F7000C5879 /* XCViewController.swift in Sources */,
 				1DDB848B1EE6F920000C5879 /* CLHomeController.swift in Sources */,
+				1DEE9E1E1EEBE36A0077F2A1 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
