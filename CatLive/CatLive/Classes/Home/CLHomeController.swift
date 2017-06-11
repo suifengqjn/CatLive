@@ -14,6 +14,7 @@ class CLHomeController: XCViewController {
         super.viewDidLoad()
 
         buildUI()
+        setupContentView()
     }
 
     
@@ -31,6 +32,7 @@ extension CLHomeController {
         buildNavbar()
     }
     
+    // 布局导航条
     private func buildNavbar() {
         
         //1. 左侧logo
@@ -52,6 +54,37 @@ extension CLHomeController {
         searchBar.searchBarStyle = .minimal
         let searchFiled = searchBar.value(forKey: "_searchField") as? UITextField
         searchFiled?.textColor = UIColor.white
+    }
+    
+    // 布局内容视图
+    fileprivate func setupContentView() {
+        // 1.获取数据
+        let homeTypes = loadTypesData()
+        
+        // 2.创建主题内容
+        let style = CLTitleStyle()
+        style.isScrollEnable = true
+        let pageFrame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: kScreenH - kNavigationBarH - kStatusBarH - 44)
+        
+        let titles = homeTypes.map({ $0.title })
+        var childVcs = [AnchorController]()
+        for type in homeTypes {
+            let anchorVc = AnchorController()
+            anchorVc.homeType = type
+            childVcs.append(anchorVc)
+        }
+        let pageView = CLPageView(frame: pageFrame, titles: titles, style: style, childVcs: childVcs, parentVc: self)
+        view.addSubview(pageView)
+    }
+    
+    fileprivate func loadTypesData() -> [HomeType] {
+        let path = Bundle.main.path(forResource: "types.plist", ofType: nil)!
+        let dataArray = NSArray(contentsOfFile: path) as! [[String : Any]]
+        var tempArray = [HomeType]()
+        for dict in dataArray {
+            tempArray.append(HomeType(dict: dict))
+        }
+        return tempArray
     }
 }
 
