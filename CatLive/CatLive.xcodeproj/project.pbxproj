@@ -17,6 +17,7 @@
 		1D6B9D2D1EED4926002E7AD6 /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B9D2C1EED4926002E7AD6 /* AnchorModel.swift */; };
 		1D6B9D301EED4988002E7AD6 /* AnchorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B9D2F1EED4988002E7AD6 /* AnchorController.swift */; };
 		1D6B9D331EED49CA002E7AD6 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D6B9D321EED49CA002E7AD6 /* types.plist */; };
+		1D6B9D361EED6700002E7AD6 /* CLWaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6B9D351EED6700002E7AD6 /* CLWaterFallLayout.swift */; };
 		1D9ED6211EE7AB17006E5AEA /* AppDelegate+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9ED6201EE7AB17006E5AEA /* AppDelegate+State.swift */; };
 		1DDB84591EE6F43B000C5879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB84581EE6F43B000C5879 /* AppDelegate.swift */; };
 		1DDB845E1EE6F43B000C5879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDB845C1EE6F43B000C5879 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		1D6B9D2C1EED4926002E7AD6 /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		1D6B9D2F1EED4988002E7AD6 /* AnchorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorController.swift; sourceTree = "<group>"; };
 		1D6B9D321EED49CA002E7AD6 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		1D6B9D351EED6700002E7AD6 /* CLWaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWaterFallLayout.swift; sourceTree = "<group>"; };
 		1D9ED6201EE7AB17006E5AEA /* AppDelegate+State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+State.swift"; sourceTree = "<group>"; };
 		1DDB84551EE6F43B000C5879 /* CatLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDB84581EE6F43B000C5879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		1D6B9D341EED66A1002E7AD6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1D6B9D351EED6700002E7AD6 /* CLWaterFallLayout.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		1DDB844C1EE6F43B000C5879 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		1DDB846A1EE6F467000C5879 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1D6B9D341EED66A1002E7AD6 /* Tools */,
 				1D6B9D311EED49CA002E7AD6 /* Resource */,
 				1DEE9E1C1EEBE3560077F2A1 /* Extension */,
 				1DDB846B1EE6F467000C5879 /* Base */,
@@ -412,6 +423,7 @@
 				1DDB847B1EE6F4F7000C5879 /* XCViewController.swift in Sources */,
 				1DDB848B1EE6F920000C5879 /* CLHomeController.swift in Sources */,
 				1DEE9E1E1EEBE36A0077F2A1 /* UIColor+Extension.swift in Sources */,
+				1D6B9D361EED6700002E7AD6 /* CLWaterFallLayout.swift in Sources */,
 				1D6B9D2D1EED4926002E7AD6 /* AnchorModel.swift in Sources */,
 				1D6B9D2B1EED4905002E7AD6 /* HomeType.swift in Sources */,
 			);
@@ -539,6 +551,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VN226642G5;
 				INFOPLIST_FILE = CatLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suifeng.CatLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -553,6 +566,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VN226642G5;
 				INFOPLIST_FILE = CatLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.suifeng.CatLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";

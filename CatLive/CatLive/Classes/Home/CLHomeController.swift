@@ -64,12 +64,14 @@ extension CLHomeController {
         // 2.创建主题内容
         let style = CLTitleStyle()
         style.isScrollEnable = true
+        style.isShowBottomLine = true
         let pageFrame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: kScreenH - kNavigationBarH - kStatusBarH - 44)
         
         let titles = homeTypes.map({ $0.title })
         var childVcs = [AnchorController]()
         for type in homeTypes {
             let anchorVc = AnchorController()
+            anchorVc.collectionView.frame = CGRect(x: 0, y: pageFrame.origin.y, width: kScreenW, height: kScreenH -  pageFrame.origin.y - 49)
             anchorVc.homeType = type
             childVcs.append(anchorVc)
         }
