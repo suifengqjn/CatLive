@@ -71,8 +71,9 @@ extension CLHomeController {
         var childVcs = [AnchorController]()
         for type in homeTypes {
             let anchorVc = AnchorController()
-            anchorVc.collectionView.frame = CGRect(x: 0, y: pageFrame.origin.y, width: kScreenW, height: kScreenH -  pageFrame.origin.y - 49)
             anchorVc.homeType = type
+            anchorVc.collectionView.frame = CGRect(x: 0, y: pageFrame.origin.y, width: kScreenW, height: kScreenH -  pageFrame.origin.y - 49)
+            
             childVcs.append(anchorVc)
         }
         let pageView = CLPageView(frame: pageFrame, titles: titles, style: style, childVcs: childVcs, parentVc: self)

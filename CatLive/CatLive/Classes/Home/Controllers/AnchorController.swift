@@ -16,7 +16,8 @@ class AnchorController: XCViewController {
 
     // MARK: 对外属性
     var homeType : HomeType!
-    
+    // MARK: 定义属性
+    fileprivate lazy var homeVM : HomeViewModel = HomeViewModel()
     lazy var collectionView: UICollectionView = {
        
         let layout = CLWaterFallLayout()
@@ -25,9 +26,13 @@ class AnchorController: XCViewController {
         layout.minimumLineSpacing = 10;
         layout.minimumInteritemSpacing = 10;
         
-        let frame = CGRect(x: 0, y: 100, width: kScreenW, height: kScreenH - 200)
+        let frame = self.view.bounds
         let collec = UICollectionView(frame: frame, collectionViewLayout: layout)
+        collec.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         collec.dataSource = self
+        collec.delegate = self as? UICollectionViewDelegate
+        collec.register(UINib(nibName: "HomeViewCell", bundle: nil), forCellWithReuseIdentifier: kAnchorCellID)
+        collec.backgroundColor = UIColor.white
         return collec
     }()
     
@@ -36,6 +41,7 @@ class AnchorController: XCViewController {
         super.viewDidLoad()
         
         setupUI()
+        loadData(index: 0)
     }
     
     
@@ -45,8 +51,17 @@ class AnchorController: XCViewController {
 // MARK:- 设置UI界面内容
 extension AnchorController {
     fileprivate func setupUI() {
-        collectionView .register(UICollectionViewCell.self, forCellWithReuseIdentifier: kAnchorCellID)
+        
         view.addSubview(collectionView)
+        
+    }
+}
+
+extension AnchorController {
+    fileprivate func loadData(index : Int) {
+        homeVM.loadHomeData(type: homeType, index : index, finishedCallback: {
+            self.collectionView.reloadData()
+        })
     }
 }
 
@@ -58,13 +73,18 @@ extension AnchorController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 100
+        //return homeVM.anchorModels.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAnchorCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAnchorCellID, for: indexPath) as! HomeViewCell
         
+//        cell.anchorModel = homeVM.anchorModels[indexPath.item]
+//        
+//        if indexPath.item == homeVM.anchorModels.count - 1 {
+//            loadData(index: homeVM.anchorModels.count)
+//        }
         cell.backgroundColor = UIColor.randomColor()
-        
         
         return cell
         
@@ -75,11 +95,11 @@ extension AnchorController: UICollectionViewDataSource {
 extension AnchorController: CLWaterFallLayoutDataSouce {
     
     func numberOfCloums(_waterFall: CLWaterFallLayout) -> Int {
-        return 3
+        return 2
     }
     
     func waterFall(_ waterFall: CLWaterFallLayout, item: Int) -> CGFloat {
-        return CGFloat(arc4random_uniform(100)) + 50.0
+        return item % 2 == 0 ? kScreenW * 2 / 3 : kScreenW * 0.5
     }
 }
 
