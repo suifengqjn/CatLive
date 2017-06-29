@@ -39,6 +39,7 @@
 		1DDB848B1EE6F920000C5879 /* CLHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB848A1EE6F920000C5879 /* CLHomeController.swift */; };
 		1DDB848D1EE6F93A000C5879 /* CLRankController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB848C1EE6F93A000C5879 /* CLRankController.swift */; };
 		1DDB848F1EE6F950000C5879 /* CLProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB848E1EE6F950000C5879 /* CLProfileController.swift */; };
+		1DDE2B591F054E4400325B63 /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDE2B581F054E4400325B63 /* Emitterable.swift */; };
 		1DEE9E1E1EEBE36A0077F2A1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE9E1D1EEBE36A0077F2A1 /* UIColor+Extension.swift */; };
 		E46373CA0DB0CD407EB7A357 /* Pods_CatLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4184F44756C9FC913EA83C7D /* Pods_CatLive.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		1DDB848A1EE6F920000C5879 /* CLHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeController.swift; sourceTree = "<group>"; };
 		1DDB848C1EE6F93A000C5879 /* CLRankController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRankController.swift; sourceTree = "<group>"; };
 		1DDB848E1EE6F950000C5879 /* CLProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLProfileController.swift; sourceTree = "<group>"; };
+		1DDE2B581F054E4400325B63 /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 		1DEE9E1D1EEBE36A0077F2A1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4184F44756C9FC913EA83C7D /* Pods_CatLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5C457D93007A2828BA8068 /* Pods-CatLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatLive/Pods-CatLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				1D00CBC11F0129EB00B18DD4 /* NetworkTools.swift */,
 				1D6B9D351EED6700002E7AD6 /* CLWaterFallLayout.swift */,
+				1DDE2B581F054E4400325B63 /* Emitterable.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 		1DDB846A1EE6F467000C5879 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1DDE2B571F054E1900325B63 /* Protocol */,
 				1D6B9D341EED66A1002E7AD6 /* Tools */,
 				1D6B9D311EED49CA002E7AD6 /* Resource */,
 				1DEE9E1C1EEBE3560077F2A1 /* Extension */,
@@ -289,6 +293,13 @@
 				1DDB848C1EE6F93A000C5879 /* CLRankController.swift */,
 			);
 			path = Rank;
+			sourceTree = "<group>";
+		};
+		1DDE2B571F054E1900325B63 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		1DEE9E1C1EEBE3560077F2A1 /* Extension */ = {
@@ -439,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDB848F1EE6F950000C5879 /* CLProfileController.swift in Sources */,
+				1DDE2B591F054E4400325B63 /* Emitterable.swift in Sources */,
 				1DDB84891EE6F8EE000C5879 /* CLDiscoverController.swift in Sources */,
 				1D00CBBF1F0129C500B18DD4 /* HomeViewCell.swift in Sources */,
 				1D9ED6211EE7AB17006E5AEA /* AppDelegate+State.swift in Sources */,
